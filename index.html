@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>title</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script>
-      dni = (function(q,w,e,r,t,y,u){q['ServiceTitanDniObject']=t;q[t]=q[t]||function(){
-          (q[t].q=q[t].q||[]).push(arguments)};q[t].l=1*new Date();y=w.createElement(e);
-          u=w.getElementsByTagName(e)[0];y.async=true;y.src=r;u.parentNode.insertBefore(y,u);
-          return q[t];
-      })(window,document,'script','https://static.servicetitan.com/marketing-ads/dni.js','dni');
-      dni('init', '7937',  { api: 'http://narek.local.zzvv.com:5102' });
-      document.addEventListener('DOMContentLoaded', function() { dni('load'); }, false);
+
+<head>
+  <meta charset="utf-8">
+  <title>title</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21971663-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-21971663-1');
+  </script>
+  <script>
+    dni = (function (q, w, e, r, t, y, u) {
+      q['ServiceTitanDniObject'] = t; q[t] = q[t] || function () {
+        (q[t].q = q[t].q || []).push(arguments)
+      }; q[t].l = 1 * new Date(); y = w.createElement(e);
+      u = w.getElementsByTagName(e)[0]; y.async = true; y.src = r; u.parentNode.insertBefore(y, u);
+      return q[t];
+    })(window, document, 'script', 'https://static.servicetitan.com/marketing-ads/dni.js', 'dni');
+    dni('init', '7937', { api: 'http://narek.local.zzvv.com:5102' });
+    document.addEventListener('DOMContentLoaded', function () { dni('load'); }, false);
   </script>
   <!-- ServiceTitan DNI -->
-  </head>
-  <body>
-	Call this number: 1234567890
-  </body>
+</head>
+
+<body>
+  Call this number: 1234567890
+</body>
+
 </html>
