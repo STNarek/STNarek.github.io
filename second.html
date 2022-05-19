@@ -25,13 +25,14 @@
     dni('init', '129', {
       api : "http://localhost:5102"
     });
-    document.addEventListener('DOMContentLoaded', function() { dni('load'); }, false);
+
+      let elem = document.getElementById('zzz');
+  elem.innerHTML = "Call this number: (888) 888-8887";
+
+    document.addEventListener('DOMContentLoaded', function() { dni('load');    let elem = document.getElementById('zzz');
+  elem.innerHTML = "Call this number: (888) 888-8887";}, false);
 </script>
 <!-- ServiceTitan DNI -->
-<script>
-  let elem = document.getElementById('zzz');
-  elem.innerHTML = "Call this number: (888) 888-8887";
-</script>
 </head>
 
 <body>
